@@ -1,0 +1,38 @@
+@use "../../styles.scss";
+
+button {
+  border: none;
+  font-size: 1rem; 
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: styles.$bg-primary;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+
+  &:hover {
+    background-color: darken(styles.$bg-primary, 10%);
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);    
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.operator {
+  background-color: styles.$bg-operator;
+  &:hover {
+    background-color: darken(styles.$bg-operator, 10%);    
+  }
+}
+
+.equal {
+  background-color: styles.$bg-equal;
+  grid-column: 4;
+  grid-row: 4/8;
+  &:hover {
+    background-color: darken(styles.$bg-equal, 10%);    
+  }
+}

@@ -1,0 +1,14 @@
+.container {
+  width: 420px;
+  height: 500px;
+  margin: 4% auto;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 1px;
+  align-items: stretch;
+  user-select: none;
+}
